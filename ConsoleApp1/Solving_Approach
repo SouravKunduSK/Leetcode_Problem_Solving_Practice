@@ -1,0 +1,11 @@
+1. Calculate Remainders: Each number in the array can be represented by its remainder when divided by k. 
+ public static int FindRemainder(int x, int k)
+    {
+        return ((x % k) + k) % k;
+    }
+
+2. Count Remainders: Create an array to store the count of each remainder.
+
+3. Check Pair Conditions:
+    Remainder 0: All numbers with a remainder of 0 must be paired among themselves, so there must be an even count.
+    Other remainders: For each remainder r, the count of numbers with that remainder should match the count of numbers with remainder (k - r).
